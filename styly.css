@@ -17,7 +17,7 @@ body {
 .headline {
   font-family: 'Lobster', cursive;
   display: block;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
   margin-block-start: 10px;
   margin-block-end: 10px;
@@ -39,4 +39,19 @@ div {
 .description {
   color: white;
   text-align: center;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  text-decoration: none;
+}
+.pravidla {
+  background-color: #1fcca4;
+}
+
+.zacit {
+  background-color: #0197f6;
 }
