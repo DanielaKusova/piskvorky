@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(#615dad #ffc8da);
+  background: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
@@ -32,4 +32,11 @@ div {
 .image {
   width: 360px;
   border-radius: 7px 7px 0 0;
+}
+
+.button,
+.headline,
+.description {
+  color: white;
+  text-align: center;
 }
