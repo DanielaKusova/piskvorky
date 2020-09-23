@@ -55,3 +55,11 @@ div {
 .zacit {
   background-color: #0197f6;
 }
+
+.pravidla:hover {
+  background-color: #1cbb96;
+}
+
+.zacit:hover {
+  background-color: #0090e9;
+}
