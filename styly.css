@@ -41,6 +41,11 @@ div {
   text-align: center;
 }
 
+.description {
+  line-height: 1.5;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
 .button {
   display: inline-block;
   width: 100%;
