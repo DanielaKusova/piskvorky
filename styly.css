@@ -1,9 +1,13 @@
+html {
+  min-height: 100vh;
+}
+
 body {
   background: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  margin: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,4 +71,160 @@ div {
 
 .zacit:hover {
   background-color: #0090e9;
+}
+/*----druhý úkol----*/
+.uvod {
+  width: 90%;
+  background-color: #283e50;
+  margin: 20px auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.obrazek {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 100%;
+}
+
+.nazev {
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  margin: 0px;
+  padding: 20px 5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.texty {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.obal {
+  max-width: 85%;
+  margin: 0px auto;
+}
+
+.seznam {
+  text-align: left;
+  max-width: 90%;
+  padding-left: 30px;
+}
+
+.odrazka {
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.kolecko,
+.krizek {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+
+/* nápovědy */
+
+figure {
+  margin: 40px auto;
+  width: 85%;
+}
+
+.ukazka {
+  width: 100%;
+}
+
+.popis {
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 10px auto 0px;
+  width: 90%;
+}
+
+/* tlačítka */
+
+.tlacitka {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tlacitko {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.uvodni {
+  background-color: #1fcca4;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.zacit {
+  background-color: #0197f6;
+}
+
+.pravidla {
+  background-color: #1fcca4;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.pravidla:hover,
+.pravidla:focus {
+  background-color: #1cbb96;
+}
+
+.uvodni:hover,
+.uvodni:focus {
+  background-color: #1cbb96;
+}
+
+.zacit:hover,
+.zacit:focus {
+  background-color: #0090e9;
+}
+
+/* široká obrazovka */
+
+@media screen and (min-width: 1000px) {
+  .uvod {
+    width: 80%;
+  }
+
+  .obrukazky {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0px auto;
+  }
+
+  figure {
+    width: 45%;
+  }
+
+  a {
+    padding: 20px;
+  }
+}
+
+/* velmi široká obrazovka */
+
+@media screen and (min-width: 2800px) {
+  .uvod {
+    width: 25%;
+  }
 }
