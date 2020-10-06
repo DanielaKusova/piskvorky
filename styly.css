@@ -119,8 +119,7 @@ div {
   padding-left: 10px;
 }
 
-.kolecko,
-.krizek {
+.ikonka {
   filter: invert(100%);
   width: 1em;
   height: 1em;
