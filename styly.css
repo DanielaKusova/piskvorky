@@ -226,3 +226,71 @@ a {
     width: 25%;
   }
 }
+
+/*----třetí úkol----*/
+
+.hra {
+  max-width: 80vmin;
+  display: flex;
+  flex-direction: column;
+}
+
+.hraje {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.pole {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    0deg,
+    rgba(250, 170, 205, 1) 0%,
+    rgba(133, 120, 161, 1) 100%
+  );
+}
+
+.button {
+  width: 8vmin;
+  height: 8vmin;
+  opacity: 0.4;
+  border: black 1px solid;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.horni {
+  display: flex;
+  justify-content: space-between;
+}
+.proklikovky {
+  display: flex;
+  align-items: center;
+}
+.domu,
+.znovu {
+  display: flex;
+  justify-content: center;
+  width: 0, 8vmin;
+  height: 0, 8vmin;
+  margin: 3px;
+  border-radius: 5px;
+}
+.znovu {
+  background-color: #1fcca4;
+}
+.znovu:hover {
+  background-color: #1cbb96;
+}
+.domu {
+  background-color: #0197f6;
+}
+.domu:hover {
+  background-color: #0090e9;
+}
+.domecek,
+.restart {
+  align-items: center;
+}
