@@ -1,4 +1,5 @@
 html {
+  box-sizing: border-box;
   min-height: 100vh;
 }
 
@@ -9,6 +10,9 @@ body {
   width: 100%;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -230,9 +234,10 @@ a {
 /*----třetí úkol----*/
 
 .hra {
-  max-width: 80vmin;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  max-width: 80vmin;
 }
 
 .hraje {
@@ -250,20 +255,21 @@ a {
   );
 }
 
-.button {
+.butt-hra {
   width: 8vmin;
   height: 8vmin;
   opacity: 0.4;
   border: black 1px solid;
 }
 
-.button:hover {
+.butt-hra:hover {
   opacity: 0.6;
 }
 
-.horni {
+.horni-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .proklikovky {
   display: flex;
@@ -273,8 +279,8 @@ a {
 .znovu {
   display: flex;
   justify-content: center;
-  width: 0, 8vmin;
-  height: 0, 8vmin;
+  width: 0,8vmin;
+  height: 0,8vmin;
   margin: 3px;
   border-radius: 5px;
 }
