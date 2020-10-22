@@ -306,6 +306,10 @@ a {
   background-size: 70%;
   background-position: center center;
   background-repeat: no-repeat;
+  width: 8vmin;
+  height: 8vmin;
+  opacity: 0.4;
+  border: black 1px solid;
 }
 
 .board__field--cross {
@@ -313,4 +317,8 @@ a {
   background-size: 70%;
   background-position: center center;
   background-repeat: no-repeat;
+  width: 8vmin;
+  height: 8vmin;
+  opacity: 0.4;
+  border: black 1px solid;
 }

@@ -2,7 +2,7 @@
 
 console.log('funguju');
 
-const button = document.querySelector('.butt-hra');
+const button = document.querySelectorAll('.butt-hra');
 
 let currentPlayer = 'circle';
 const gameArea = document.querySelector('.pole');
