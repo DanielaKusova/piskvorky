@@ -279,8 +279,8 @@ a {
 .znovu {
   display: flex;
   justify-content: center;
-  width: 0,8vmin;
-  height: 0,8vmin;
+  width: 0, 8vmin;
+  height: 0, 8vmin;
   margin: 3px;
   border-radius: 5px;
 }
@@ -299,4 +299,18 @@ a {
 .domecek,
 .restart {
   align-items: center;
+}
+
+.board__field--circle {
+  background-image: url('circle.svg');
+  background-size: 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.board__field--cross {
+  background-image: url('cross.svg');
+  background-size: 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }

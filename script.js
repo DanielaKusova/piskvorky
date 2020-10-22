@@ -1,5 +1,7 @@
 'use strict';
 
+console.log('funguju');
+
 const button = document.querySelector('.butt-hra');
 
 let currentPlayer = 'circle';
