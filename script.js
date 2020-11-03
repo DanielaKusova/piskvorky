@@ -120,4 +120,84 @@ const isWinningMove = (field) => {
   }
 
   return false;
+
+  //---------------bonus sikme smery---------
+  // Koukni sikmo nahoru doleva
+
+  i = origin.column;
+  j = origin.row;
+
+  let inDiaLeft = 1;
+
+  while (j > 0 && i > 0 && symbol === getSymbol(getField(j - 1, i - 1))) {
+    inDiaLeft++;
+    i--;
+    j--;
+  }
+  // Koukni sikmo dolu doprava
+  i = origin.column;
+  j = origin.row;
+  while (
+    j < boardSize - 1 &&
+    i < boardSize - 1 &&
+    symbol === getSymbol(getField(j + 1, i + 1)) //
+  ) {
+    inDiaLeft++;
+    i++;
+    j++;
+  }
+
+  if (inDiaLeft >= 5) {
+    return true;
+  }
+
+  let inDiaRight = 1;
+
+  // Koukni sikmo nahoru doprava
+  i = origin.column;
+  j = origin.row;
+  while (j > 0 && i > 0 && symbol === getSymbol(getField(j - 1, i + 1))) {
+    inDiaRight++;
+    i++;
+    j--;
+  }
+
+  // Koukni sikmo dolu doleva
+  i = origin.column;
+  j = origin.row;
+  while (
+    i < boardSize - 1 &&
+    j < boardSize - 1 &&
+    symbol === getSymbol(getField(j + 1, i - 1)) //
+  ) {
+    inRow++;
+    i--;
+    j++;
+  }
+
+  if (inDiaRight >= 5) {
+    return true;
+  }
+  return false;
 };
+
+fu showResult (vyhra, symbol) {
+  if (vyhra) {
+    if (symbol === 'cross') {
+      let r = confirm(
+        'Vyhrál křížek. Chcete další hru, ať mu to kolečko natře?',
+      );
+      if (r === true) {
+        location.reload();
+      }
+    }
+    if (symbol === 'circle') {
+      let r = confirm(
+        'Vyhrálo kolečko. Chcete další hru, ať mu to křížek natře?',
+      );
+      if (r === true) {
+        location.reload();
+      }
+    }
+  }
+}
