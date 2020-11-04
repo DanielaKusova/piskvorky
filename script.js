@@ -52,12 +52,12 @@ const getPosition = (field) => {
   }
 
   return {
-    row: Math.floor(fieldIndex / 10),
-    column: fieldIndex % 10,
+    row: Math.floor(i / 10),
+    column: i % 10,
   };
 };
 
-const getField = (row, column) => button[row * 10 + column];
+const getField = (row, column) => fieldElements[row * 10 + column];
 
 const getSymbol = (field) => {
   // Název třídy přizpůsob tvému kódu.
@@ -73,7 +73,7 @@ const isWinningMove = (field) => {
   const origin = getPosition(field);
   const symbol = getSymbol(field);
 
-  let i;
+  let i = 0;
 
   let inRow = 1; // Jednička pro právě vybrané políčko
   // Koukni doleva
@@ -120,10 +120,28 @@ const isWinningMove = (field) => {
   }
 
   return false;
+};
 
-  //---------------bonus sikme smery---------
-  // Koukni sikmo nahoru doleva
+for (let i = 0; i < fieldElements.length; i++) {
+  fieldElements[i].addEventListener('click', (event) => {
+    const isWinner = isWinningMove(event.target);
+    if (isWinner) {
+      kdoVyhral(event.target);
+    }
+  });
+}
 
+const kdoVyhral = (field) => {
+  if (getSymbol(field) === 'cross') {
+    alert('Gratuluji, vyhrál křížek!');
+  } else if (getSymbol(field) === 'circle') {
+    alert('Gratuluji, vyhrálo kolečko!');
+  }
+};
+
+//---------------bonus sikme smery---------
+// Koukni sikmo nahoru doleva
+/*
   i = origin.column;
   j = origin.row;
 
@@ -200,4 +218,4 @@ fu showResult (vyhra, symbol) {
       }
     }
   }
-}
+}*/
